@@ -14,7 +14,7 @@
         <div class="text"><p>We are happy to hear from you</p></div>
         <div class="comments"></div>
         <div class="commentbox">
-            <img src="user2.png" alt="">
+            <img src="img/user2.png" alt="">
             <div class="content">
                 <h2>Comment as: </h2>
                 <input type="text" value="Anonymous" class="user">
@@ -70,10 +70,10 @@
             userId.name = userName.value;
             if(userId.name === "Anonymous") {
                 userId.identity = false;
-                userId.image = "anonymous.png";
+                userId.image = "img/anonymous.png";
             }else {
                 userId.identity = true;
-                userId.image = "user1.png"
+                userId.image = "img/user1.png"
             }
 
             userId.message = userComment.value;
@@ -84,7 +84,7 @@
                 <div>
                     <h1>${userId.name}</h1>
                     <p>${userId.message}</p>
-                    <div class="engagements"><img src="like.png"><img src="share.png"></div>
+                    <div class="engagements"><img src="img/like.png"><img src="img/share.png"></div>
                     <span class="date">${userId.date}</span>
                 </div>
             </div>`;
